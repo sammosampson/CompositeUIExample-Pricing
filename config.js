@@ -23,8 +23,9 @@ System.config({
     "events": "npm:events@1.0.2",
     "fetch": "npm:whatwg-fetch@0.9.0",
     "flux": "npm:flux@2.0.3",
-    "react": "npm:react@0.14.0-alpha3",
+    "react": "npm:react@0.14.0-beta3",
     "react-components": "github:sammosampson/CompositeUIExample-React@0.1.0",
+    "sammosampson/compositeuiexample-pricing": "github:sammosampson/compositeuiexample-pricing@master",
     "whatwg-fetch": "npm:whatwg-fetch@0.9.0",
     "github:floatdrop/plugin-jsx@1.1.0": {
       "react-tools": "npm:react-tools@0.13.3"
@@ -33,13 +34,16 @@ System.config({
       "assert": "npm:assert@1.3.0"
     },
     "github:jspm/nodelibs-buffer@0.1.0": {
-      "buffer": "npm:buffer@3.3.1"
+      "buffer": "npm:buffer@3.3.2"
     },
     "github:jspm/nodelibs-constants@0.1.0": {
       "constants-browserify": "npm:constants-browserify@0.0.1"
     },
     "github:jspm/nodelibs-crypto@0.1.0": {
       "crypto-browserify": "npm:crypto-browserify@3.9.14"
+    },
+    "github:jspm/nodelibs-domain@0.1.0": {
+      "domain-browser": "npm:domain-browser@1.1.4"
     },
     "github:jspm/nodelibs-events@0.1.1": {
       "events": "npm:events@1.0.2"
@@ -78,10 +82,22 @@ System.config({
       "jsx": "github:floatdrop/plugin-jsx@1.1.0",
       "react": "npm:react@0.13.0-beta.1"
     },
+    "github:sammosampson/compositeuiexample-pricing@master": {
+      "bootstrap": "npm:bootstrap@3.3.5",
+      "fetch": "npm:whatwg-fetch@0.9.0",
+      "flux": "npm:flux@2.0.3",
+      "react": "npm:react@0.14.0-beta3",
+      "react-components": "github:sammosampson/CompositeUIExample-React@0.1.0",
+      "whatwg-fetch": "npm:whatwg-fetch@0.9.0"
+    },
     "npm:amdefine@1.0.0": {
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "module": "github:jspm/nodelibs-module@0.1.0",
       "path": "github:jspm/nodelibs-path@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.1"
+    },
+    "npm:asap@2.0.3": {
+      "domain": "github:jspm/nodelibs-domain@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
     "npm:asn1.js@2.1.3": {
@@ -141,7 +157,7 @@ System.config({
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "systemjs-json": "github:systemjs/plugin-json@0.1.0"
     },
-    "npm:buffer@3.3.1": {
+    "npm:buffer@3.3.2": {
       "base64-js": "npm:base64-js@0.0.8",
       "ieee754": "npm:ieee754@1.1.6",
       "is-array": "npm:is-array@1.0.1"
@@ -176,6 +192,11 @@ System.config({
       "systemjs-json": "github:systemjs/plugin-json@0.1.0"
     },
     "npm:core-js@0.9.18": {
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "process": "github:jspm/nodelibs-process@0.1.1",
+      "systemjs-json": "github:systemjs/plugin-json@0.1.0"
+    },
+    "npm:core-js@1.0.1": {
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "process": "github:jspm/nodelibs-process@0.1.1",
       "systemjs-json": "github:systemjs/plugin-json@0.1.0"
@@ -225,6 +246,9 @@ System.config({
       "randombytes": "npm:randombytes@2.0.1",
       "systemjs-json": "github:systemjs/plugin-json@0.1.0"
     },
+    "npm:domain-browser@1.1.4": {
+      "events": "github:jspm/nodelibs-events@0.1.1"
+    },
     "npm:elliptic@3.1.0": {
       "bn.js": "npm:bn.js@2.2.0",
       "brorand": "npm:brorand@1.0.5",
@@ -244,6 +268,14 @@ System.config({
     "npm:esprima-fb@15001.1.0-dev-harmony-fb": {
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "process": "github:jspm/nodelibs-process@0.1.1"
+    },
+    "npm:fbjs@0.1.0-alpha.4": {
+      "core-js": "npm:core-js@1.0.1",
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "path": "github:jspm/nodelibs-path@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.1",
+      "promise": "npm:promise@7.0.4",
+      "whatwg-fetch": "npm:whatwg-fetch@0.9.0"
     },
     "npm:glob@4.2.2": {
       "assert": "github:jspm/nodelibs-assert@0.1.0",
@@ -336,6 +368,10 @@ System.config({
       "process": "github:jspm/nodelibs-process@0.1.1",
       "systemjs-json": "github:systemjs/plugin-json@0.1.0"
     },
+    "npm:promise@7.0.4": {
+      "asap": "npm:asap@2.0.3",
+      "fs": "github:jspm/nodelibs-fs@0.1.2"
+    },
     "npm:public-encrypt@2.0.1": {
       "bn.js": "npm:bn.js@2.2.0",
       "browserify-rsa": "npm:browserify-rsa@2.0.1",
@@ -367,9 +403,10 @@ System.config({
       "envify": "npm:envify@3.4.0",
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
-    "npm:react@0.14.0-alpha3": {
+    "npm:react@0.14.0-beta3": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "envify": "npm:envify@3.4.0",
+      "fbjs": "npm:fbjs@0.1.0-alpha.4",
       "process": "github:jspm/nodelibs-process@0.1.1"
     },
     "npm:readable-stream@1.1.13": {

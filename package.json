@@ -9,18 +9,18 @@
   "author": "",
   "license": "ISC",
   "jspm": {
+    "registry": "jspm",
+    "format": "es6",
     "directories": {
       "lib": "lib"
     },
-    "main": "index.js",
-    "format": "es6",
-    "registry": "jspm",
     "dependencies": {
       "bootstrap": "npm:bootstrap@^3.3.5",
       "fetch": "npm:whatwg-fetch@^0.9.0",
       "flux": "npm:flux@^2.0.3",
       "react": "npm:react@^0.14.0-alpha3",
       "react-components": "github:sammosampson/CompositeUIExample-React@0.1.0",
+      "sammosampson/compositeuiexample-pricing": "github:sammosampson/compositeuiexample-pricing@master",
       "whatwg-fetch": "npm:whatwg-fetch@^0.9.0"
     },
     "devDependencies": {
